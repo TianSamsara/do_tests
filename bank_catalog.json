@@ -1,0 +1,30 @@
+{
+  "name": "刷题系统题库中心",
+  "description": "do_test_packet - 刷题系统云端题库仓库",
+  "version": "1.0.0",
+  "update_time": "2026-06-17",
+  "banks": [
+    {
+      "id": "bank_001",
+      "name": "Django_Web复习题库",
+      "description": "Django Web框架复习题库，涵盖MTV架构、ORM、模板、路由等核心知识点",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/webDjango%E9%A2%98%E5%BA%93.json",
+      "size": 17735,
+      "question_count": 33,
+      "types": ["single", "essay"],
+      "checksum": ""
+    },
+    {
+      "id": "bank_002",
+      "name": "网络爬虫知识点复习题库",
+      "description": "Python爬虫技术题库，覆盖requests、Scrapy、反爬等知识",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/%E7%88%AC%E8%99%AB.json",
+      "size": 37851,
+      "question_count": 50,
+      "types": ["single", "essay"],
+      "checksum": ""
+    }
+  ]
+}

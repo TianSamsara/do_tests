@@ -1,0 +1,390 @@
+{
+    "name": "Django_Web复习题库",
+    "questions": [
+        {
+            "index": 1,
+            "type": "single",
+            "text": "Django 项目中，存放数据模型类的默认文件是？",
+            "options": {
+                "A": "views.py",
+                "B": "models.py",
+                "C": "urls.py",
+                "D": "settings.py"
+            },
+            "answer": "B",
+            "explanation": "models.py 专门定义数据库模型类；views.py 编写视图逻辑，urls.py 配置路由，settings.py 是项目全局配置文件。"
+        },
+        {
+            "index": 2,
+            "type": "single",
+            "text": "Django 视图函数的第一个参数通常是？",
+            "options": {
+                "A": "response",
+                "B": "template",
+                "C": "request",
+                "D": "model"
+            },
+            "answer": "C",
+            "explanation": "视图函数标准格式为 def func(request, ...)，request 封装了浏览器发来的所有HTTP请求信息。"
+        },
+        {
+            "index": 3,
+            "type": "single",
+            "text": "下列不属于 Django 模型查询方法的是？",
+            "options": {
+                "A": "filter()",
+                "B": "get()",
+                "C": "insert()",
+                "D": "exclude()"
+            },
+            "answer": "C",
+            "explanation": "Django ORM 无 insert() 方法，新增数据使用 create() 或 save()；filter、get、exclude 均为常用查询方法。"
+        },
+        {
+            "index": 4,
+            "type": "single",
+            "text": "在 Django 模板继承中，子模板通常第一行应写？",
+            "options": {
+                "A": "{% extends 'base.html' %}",
+                "B": "{% include 'base.html' %}",
+                "C": "{% csrf_token %}",
+                "D": "{{ base.html }}"
+            },
+            "answer": "A",
+            "explanation": "{% extends %} 是模板继承标签，声明继承父模板；include 用于引入零散模板片段。"
+        },
+        {
+            "index": 5,
+            "type": "single",
+            "text": "Django 模板中，用于循环遍历数据的标签是？",
+            "options": {
+                "A": "{% if %}",
+                "B": "{% for %}",
+                "C": "{% url %}",
+                "D": "{% extends %}"
+            },
+            "answer": "B",
+            "explanation": "{% for %} 实现循环遍历；if 为条件判断，url 用于路由反向解析。"
+        },
+        {
+            "index": 6,
+            "type": "single",
+            "text": "Django ORM 中，filter() 方法返回的是？",
+            "options": {
+                "A": "单个模型对象",
+                "B": "QuerySet 查询集",
+                "C": "字符串",
+                "D": "字典"
+            },
+            "answer": "B",
+            "explanation": "filter() 返回多条数据组成的 QuerySet 查询集；get() 才会返回单个模型对象。"
+        },
+        {
+            "index": 7,
+            "type": "single",
+            "text": "Django 模板中，用来接收视图传递过来的变量使用的语法是？",
+            "options": {
+                "A": "{{变量名}}",
+                "B": "{% 代码块 %}",
+                "C": "# 注释内容",
+                "D": "/* 内容 */"
+            },
+            "answer": "A",
+            "explanation": "{{ }} 渲染模板变量；{% %} 编写模板逻辑标签，Django 模板单行注释使用 {# #}。"
+        },
+        {
+            "index": 8,
+            "type": "single",
+            "text": "URL 路由 path('news/<slug:pk>/', views.detail) 中，slug 可匹配？",
+            "options": {
+                "A": "只包含中文的字符串",
+                "B": "字母、数字、横杠、下划线组成的字符串",
+                "C": "任何包含 / 的路径",
+                "D": "只能匹配整数"
+            },
+            "answer": "B",
+            "explanation": "slug 是Django内置路径转换器，仅匹配字母、数字、下划线、连字符，不支持中文和斜杠。"
+        },
+        {
+            "index": 9,
+            "type": "single",
+            "text": "下列哪一项不属于 Django 内置应用（app）？",
+            "options": {
+                "A": "Admin",
+                "B": "auth",
+                "C": "contenttypes",
+                "D": "flask"
+            },
+            "answer": "D",
+            "explanation": "flask 是另一款独立的Python Web框架，并非Django内置组件；Admin、auth、contenttypes 均为Django默认内置应用。"
+        },
+        {
+            "index": 10,
+            "type": "single",
+            "text": "若要在数据库中直接实现字段自增，例如浏览量加 1，较合适的是使用？",
+            "options": {
+                "A": "F() 表达式",
+                "B": "Q() 对象",
+                "C": "reverse() 函数",
+                "D": "render() 函数"
+            },
+            "answer": "A",
+            "explanation": "F() 表达式在数据库层完成字段运算，避免并发数据错乱；Q() 用于复杂多条件查询。"
+        },
+        {
+            "index": 11,
+            "type": "single",
+            "text": "在 Django 模板中的 POST 表单中，为防止 CSRF 攻击，通常需要添加？",
+            "options": {
+                "A": "{% url %}",
+                "B": "{% include %}",
+                "C": "{% csrf_token %}",
+                "D": "{% static %}"
+            },
+            "answer": "C",
+            "explanation": "{% csrf_token %} 生成防伪令牌，是Django防御跨站请求伪造攻击的必备标签。"
+        },
+        {
+            "index": 12,
+            "type": "single",
+            "text": "在 Django MTV 架构中，负责接收请求、处理业务逻辑、返回响应的是？",
+            "options": {
+                "A": "Model",
+                "B": "Template",
+                "C": "View",
+                "D": "Controller"
+            },
+            "answer": "C",
+            "explanation": "View（视图）处理核心业务逻辑；Model 操作数据，Template 负责页面展示，Django 无Controller层。"
+        },
+        {
+            "index": 13,
+            "type": "single",
+            "text": "视图里要把字典传给模板，需要写在哪个参数里？",
+            "options": {
+                "A": "request",
+                "B": "context",
+                "C": "args",
+                "D": "kwargs"
+            },
+            "answer": "B",
+            "explanation": "render(request, 模板路径, context={数据字典})，context 专门存放传给模板的变量。"
+        },
+        {
+            "index": 14,
+            "type": "single",
+            "text": "Django 用户认证中，用于验证用户名和密码的方法是？",
+            "options": {
+                "A": "authenticate()",
+                "B": "login_required()",
+                "C": "logout()",
+                "D": "permission_required()"
+            },
+            "answer": "A",
+            "explanation": "authenticate() 校验账号密码；login_required 是登录校验装饰器，logout() 实现用户登出。"
+        },
+        {
+            "index": 15,
+            "type": "single",
+            "text": "在 Django 视图中，render() 函数的主要作用是？",
+            "options": {
+                "A": "执行数据库查询",
+                "B": "跳转 URL 地址",
+                "C": "加载并渲染 HTML 模板，返回网页响应",
+                "D": "校验用户登录状态"
+            },
+            "answer": "C",
+            "explanation": "render 整合模板与数据，生成完整HTML页面并返回给浏览器。"
+        },
+        {
+            "index": 16,
+            "type": "single",
+            "text": "基于类的视图通常需要在 URL 配置中调用？",
+            "options": {
+                "A": "as_view()",
+                "B": "is_valid()",
+                "C": "save()",
+                "D": "migrate()"
+            },
+            "answer": "A",
+            "explanation": "类视图无法直接被路由调用，必须通过 as_view() 转为可执行视图函数。"
+        },
+        {
+            "index": 17,
+            "type": "single",
+            "text": "Django 是一种基于 Python 的？",
+            "options": {
+                "A": "桌面开发框架",
+                "B": "Web 开发框架",
+                "C": "数据库管理系统",
+                "D": "操作系统"
+            },
+            "answer": "B",
+            "explanation": "Django 是主流Python Web开发框架，用于搭建网站、接口等Web应用。"
+        },
+        {
+            "index": 18,
+            "type": "single",
+            "text": "下列关于 Django ORM 的说法错误的是？",
+            "options": {
+                "A": "无需编写原生 SQL 即可操作数据库",
+                "B": "可通过 F() 表达式实现字段值运算",
+                "C": "不支持 MySQL 数据库",
+                "D": "支持数据库迁移操作"
+            },
+            "answer": "C",
+            "explanation": "Django ORM 全面支持 MySQL、SQLite、PostgreSQL 等主流数据库。"
+        },
+        {
+            "index": 19,
+            "type": "essay",
+            "text": "Django 内置 Admin 站点的核心作用是什么？",
+            "options": {},
+            "answer": "",
+            "explanation": "快速生成可视化后台管理页面，无需手写代码，即可对数据库数据进行增删改查管理，多用于运营、管理员维护业务数据。"
+        },
+        {
+            "index": 20,
+            "type": "single",
+            "text": "Django 项目中，配置数据库、静态资源等核心设置的文件是？",
+            "options": {
+                "A": "urls.py",
+                "B": "settings.py",
+                "C": "models.py",
+                "D": "views.py"
+            },
+            "answer": "B",
+            "explanation": "settings.py 是项目总配置文件，包含数据库、静态文件、注册应用、中间件等所有核心配置。"
+        },
+        {
+            "index": 21,
+            "type": "single",
+            "text": "Django 路由系统中，用于匹配正则表达式的函数是？",
+            "options": {
+                "A": "path()",
+                "B": "re_path()",
+                "C": "include()",
+                "D": "reverse()"
+            },
+            "answer": "B",
+            "explanation": "re_path() 支持正则路由匹配；path() 用于普通路径匹配，include() 用于路由分发。"
+        },
+        {
+            "index": 22,
+            "type": "single",
+            "text": "想要在 Django 中创建一个字符串类型、限制最大长度的模型字段，应使用？",
+            "options": {
+                "A": "IntegerField",
+                "B": "CharField",
+                "C": "BooleanField",
+                "D": "DateField"
+            },
+            "answer": "B",
+            "explanation": "CharField 为短字符串字段，必须配置 max_length 指定最大长度；IntegerField 是整型字段。"
+        },
+        {
+            "index": 23,
+            "type": "single",
+            "text": "Django 表单中，用于自动绑定模型并生成表单的类是？",
+            "options": {
+                "A": "Form",
+                "B": "ModelForm",
+                "C": "BaseForm",
+                "D": "Widget"
+            },
+            "answer": "B",
+            "explanation": "ModelForm 关联数据模型，自动根据模型字段生成表单，简化开发；Form 为普通自定义表单。"
+        },
+        {
+            "index": 24,
+            "type": "single",
+            "text": "表单字段 CharField 的默认小部件是？",
+            "options": {
+                "A": "PasswordInput",
+                "B": "TextInput",
+                "C": "CheckboxInput",
+                "D": "Select"
+            },
+            "answer": "B",
+            "explanation": "CharField 默认渲染为单行文本输入框 TextInput；PasswordInput 为密码框。"
+        },
+        {
+            "index": 25,
+            "type": "single",
+            "text": "Django 中用于合并多个查询条件（与、或、非）的类是？",
+            "options": {
+                "A": "Q",
+                "B": "F",
+                "C": "P",
+                "D": "R"
+            },
+            "answer": "A",
+            "explanation": "Q 对象实现多条件组合查询，支持 &(与)、|(或)、~(非) 逻辑。"
+        },
+        {
+            "index": 26,
+            "type": "essay",
+            "text": "简述 HttpResponse、render、redirect 三者使用场景差异？",
+            "options": {},
+            "answer": "",
+            "explanation": "HttpResponse：基础响应类，直接返回纯文本、字符串、二进制数据，适合简单文本响应、接口返回原始内容。render：模板渲染函数，加载HTML模板并传入数据，拼接成完整网页返回，是页面展示的主流用法。redirect：重定向函数，返回302状态码，跳转到新URL，多用于表单提交、登录成功后页面跳转。"
+        },
+        {
+            "index": 27,
+            "type": "essay",
+            "text": "简述 Django 的 MTV 架构，并说明 Model、Template、View 分别负责什么？",
+            "options": {},
+            "answer": "",
+            "explanation": "MTV 是Django专属的分层架构，是MVC模式的变体。Model（模型）：对接数据库，定义数据表结构，实现数据增删改查，负责数据层。Template（模板）：编写HTML页面，展示数据、搭建页面布局，负责视图展示层。View（视图）：接收用户请求，调用模型获取数据，传递给模板，处理核心业务逻辑，是中间调度层。"
+        },
+        {
+            "index": 28,
+            "type": "essay",
+            "text": "Django 表单字段有哪几种渲染方式？",
+            "options": {},
+            "answer": "",
+            "explanation": "1.整体渲染：{{ form }}，自动渲染全部表单字段；2.逐个字段渲染：{{ form.字段名 }}，单独控制单个输入框；3.渲染附属元素：{{ form.字段名.label_tag }} 渲染标签、{{ form.字段名.errors }} 渲染错误提示；4.手动原生标签：手写HTML <input> 标签，绑定表单name属性，完全自定义样式。"
+        },
+        {
+            "index": 29,
+            "type": "essay",
+            "text": "简述 Django 路由分发机制。",
+            "options": {},
+            "answer": "",
+            "explanation": "1.用户发起请求后，Django 从项目根 urls.py 开始自上而下匹配URL规则；2.匹配成功后，执行对应视图，或通过 include() 将路由分发到对应App的 urls.py 继续匹配；3.全部规则匹配失败，返回404页面。"
+        },
+        {
+            "index": 30,
+            "type": "essay",
+            "text": "简述 Django 模型中一对多、多对多、一对一关系的定义方式及核心区别。",
+            "options": {},
+            "answer": "",
+            "explanation": "一对多：使用 ForeignKey，在多的一方设置外键指向一的一方。多对多：使用 ManyToManyField，任意一方定义字段，Django自动生成中间关联表。一对一：使用 OneToOneField，基于唯一外键实现，多用于表拆分、数据扩展。"
+        },
+        {
+            "index": 31,
+            "type": "essay",
+            "text": "简述 Django ORM 的作用。",
+            "options": {},
+            "answer": "",
+            "explanation": "ORM 即对象关系映射，将Python类映射为数据库表，开发者使用Python对象语法操作数据，无需编写原生SQL；同时屏蔽不同数据库的语法差异，项目可无缝切换数据库，还提供查询、事务、字段运算等丰富功能。"
+        },
+        {
+            "index": 32,
+            "type": "essay",
+            "text": "简述 Django 模板继承的作用与基本语法。",
+            "options": {},
+            "answer": "",
+            "explanation": "作用：抽取页面公共部分实现代码复用，减少重复编写，统一页面样式，便于后期维护。语法：父模板用 {% block 名称 %}{% endblock %} 定义可替换区块；子模板首行写 {% extends '父模板.html' %} 继承父模板，再重写对应block区块内容。"
+        },
+        {
+            "index": 33,
+            "type": "essay",
+            "text": "简述 Django 开发环境需要安装的核心软件及作用。",
+            "options": {},
+            "answer": "",
+            "explanation": "1.Python：Django 的运行依赖环境，提供基础语法与库支持；2.Django 框架：提供MTV架构、路由、ORM、表单等全套Web开发能力；3.数据库：存储业务数据，开发阶段默认使用SQLite，线上常用MySQL；4.代码编辑器/IDE：编写、调试代码。"
+        }
+    ],
+    "created_at": "2026-06-10 15:00:00"
+}

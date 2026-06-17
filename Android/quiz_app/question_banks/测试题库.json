@@ -1,0 +1,45 @@
+{
+  "name": "测试题库",
+  "questions": [
+    {
+      "index": 0,
+      "type": "single",
+      "text": "Python中哪个关键字用于定义函数？",
+      "options": {
+        "A": "def",
+        "B": "function",
+        "C": "func",
+        "D": "define"
+      },
+      "answer": "A",
+      "explanation": "在Python中，使用 def 关键字来定义函数。"
+    },
+    {
+      "index": 1,
+      "type": "single",
+      "text": "下列哪个数据类型是不可变的？",
+      "options": {
+        "A": "列表",
+        "B": "字典",
+        "C": "元组",
+        "D": "集合"
+      },
+      "answer": "C",
+      "explanation": "元组(tuple)是不可变数据类型，一旦创建就不能修改。"
+    },
+    {
+      "index": 2,
+      "type": "multiple",
+      "text": "以下哪些是Python的内置数据类型？（多选）",
+      "options": {
+        "A": "list",
+        "B": "dict",
+        "C": "array",
+        "D": "tuple"
+      },
+      "answer": "ABD",
+      "explanation": "list、dict、tuple都是Python的内置数据类型，而array需要导入array模块。"
+    }
+  ],
+  "created_at": "2026-06-16 12:00:00"
+}

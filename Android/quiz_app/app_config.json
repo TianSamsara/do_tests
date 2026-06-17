@@ -1,0 +1,43 @@
+{
+  "github_repo": "https://github.com/TianSamsara/do_test_packet",
+  "installed_banks": {
+    "bank_002": {
+      "name": "网络爬虫知识点复习题库",
+      "version": "1.0.0",
+      "install_time": "2026-06-17 09:32:11",
+      "file": "网络爬虫知识点复习题库.json"
+    },
+    "bank_001": {
+      "name": "Django_Web复习题库",
+      "version": "1.0.0",
+      "install_time": "2026-06-17 09:32:24",
+      "file": "Django_Web复习题库.json"
+    }
+  },
+  "quiz_colors": {
+    "selected": [
+      1.0,
+      0.3,
+      0.3,
+      1.0
+    ],
+    "correct": [
+      0.2,
+      0.8,
+      0.2,
+      1.0
+    ],
+    "wrong": [
+      0.9,
+      0.3,
+      0.3,
+      1.0
+    ],
+    "default": [
+      0.7,
+      0.7,
+      0.7,
+      1.0
+    ]
+  }
+}

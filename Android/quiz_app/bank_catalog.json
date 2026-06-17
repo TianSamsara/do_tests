@@ -1,0 +1,52 @@
+{
+  "name": "刷题系统题库中心",
+  "description": "do_test_packet - 刷题系统云端题库仓库",
+  "version": "1.0.0",
+  "update_time": "2026-06-17",
+  "banks": [
+    {
+      "id": "bank_001",
+      "name": "Django_Web复习题库",
+      "description": "Django Web框架复习题库，涵盖MTV架构、ORM、模板、路由等核心知识点",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/banks/Django_Web复习题库.json",
+      "size": 15200,
+      "question_count": 33,
+      "types": ["single", "essay"],
+      "checksum": ""
+    },
+    {
+      "id": "bank_002",
+      "name": "财务管理题库",
+      "description": "财务管理复习题库，包含单选、多选、大题等题型",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/banks/财务管理题库.json",
+      "size": 24500,
+      "question_count": 52,
+      "types": ["single", "multiple", "essay"],
+      "checksum": ""
+    },
+    {
+      "id": "bank_003",
+      "name": "爬虫题库",
+      "description": "Python爬虫技术题库，覆盖requests、Scrapy、反爬等知识",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/banks/爬虫.json",
+      "size": 22000,
+      "question_count": 50,
+      "types": ["single", "essay"],
+      "checksum": ""
+    },
+    {
+      "id": "bank_004",
+      "name": "测试题库",
+      "description": "通用测试题库，包含单选、多选题型",
+      "version": "1.0.0",
+      "download_url": "https://raw.githubusercontent.com/TianSamsara/do_test_packet/main/banks/测试题库.json",
+      "size": 1800,
+      "question_count": 3,
+      "types": ["single", "multiple"],
+      "checksum": ""
+    }
+  ]
+}

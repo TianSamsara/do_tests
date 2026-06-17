@@ -1,0 +1,566 @@
+{
+    "name": "网络爬虫知识点复习题库",
+    "questions": [
+        {
+            "index": 1,
+            "type": "single",
+            "text": "Requests库的get()方法主要用于？",
+            "options": {
+                "A": "发送POST请求提交数据",
+                "B": "向目标网址发送GET请求获取网页内容",
+                "C": "连接数据库",
+                "D": "解析HTML文档"
+            },
+            "answer": "B",
+            "explanation": "requests.get()是Requests库核心方法，专门用于发起GET请求，从目标服务器获取网页内容。"
+        },
+        {
+            "index": 2,
+            "type": "single",
+            "text": "XPath语法规则中，XML文档的整体结构被抽象为？",
+            "options": {
+                "A": "树形结构",
+                "B": "线性结构",
+                "C": "网状结构",
+                "D": "哈希结构"
+            },
+            "answer": "A",
+            "explanation": "XML、HTML文档在XPath体系中统一被抽象为树形节点结构，包含根节点、元素节点、文本节点等。"
+        },
+        {
+            "index": 3,
+            "type": "single",
+            "text": "XPath路径表达式的核心作用是选取XML文档中的？",
+            "options": {
+                "A": "服务器配置信息",
+                "B": "节点及节点内容",
+                "C": "网络请求头",
+                "D": "日志文件"
+            },
+            "answer": "B",
+            "explanation": "XPath是路径查询语言，核心功能就是定位并选取XML/HTML中的各类节点、文本与属性内容。"
+        },
+        {
+            "index": 4,
+            "type": "single",
+            "text": "实施网络数据采集工作的首要步骤是？",
+            "options": {
+                "A": "解析网页内容",
+                "B": "存储数据",
+                "C": "分析目标网站并确定采集目标",
+                "D": "编写解析代码"
+            },
+            "answer": "C",
+            "explanation": "开展爬虫采集工作前，必须先分析目标网站结构、反爬规则、采集范围，这是整个流程的第一步。"
+        },
+        {
+            "index": 5,
+            "type": "single",
+            "text": "HTML文档经BeautifulSoup解析后形成标签树结构，该结构中主要包含哪两类节点？",
+            "options": {
+                "A": "标签节点、文本节点",
+                "B": "文件节点、日志节点",
+                "C": "链接节点、图片节点",
+                "D": "请求节点、响应节点"
+            },
+            "answer": "A",
+            "explanation": "BeautifulSoup将HTML解析为标签树，核心节点分为标签（元素）节点和标签内的文本节点两类。"
+        },
+        {
+            "index": 6,
+            "type": "single",
+            "text": "Scrapy框架中，负责协调Spider、Downloader、Scheduler等模块之间通信的组件是？",
+            "options": {
+                "A": "Downloader",
+                "B": "引擎（Engine）",
+                "C": "Item Pipeline",
+                "D": "Spider"
+            },
+            "answer": "B",
+            "explanation": "Scrapy引擎是框架核心调度中心，全权负责各个组件之间的消息传递、任务调度与协同工作。"
+        },
+        {
+            "index": 7,
+            "type": "single",
+            "text": "HTTP协议是哪两者之间的请求响应协议？",
+            "options": {
+                "A": "客户端与客户端",
+                "B": "服务器与服务器",
+                "C": "客户端与Web服务器",
+                "D": "数据库与应用程序"
+            },
+            "answer": "C",
+            "explanation": "HTTP属于应用层协议，规范了浏览器、爬虫等客户端与Web服务器之间的请求和响应交互规则。"
+        },
+        {
+            "index": 8,
+            "type": "single",
+            "text": "以下属于JSON常见基础数据类型组合的是？",
+            "options": {
+                "A": "对象、数组、字符串",
+                "B": "类、方法、函数",
+                "C": "指针、结构体、枚举",
+                "D": "线程、进程、协程"
+            },
+            "answer": "A",
+            "explanation": "JSON标准数据类型包含对象、数组、字符串、数字、布尔值、null，其余选项均不属于JSON数据类型。"
+        },
+        {
+            "index": 9,
+            "type": "single",
+            "text": "爬虫开发中使用的Selenium主要功能是？",
+            "options": {
+                "A": "快速解析HTML文本",
+                "B": "模拟浏览器操作的自动化工具",
+                "C": "实现数据持久化存储",
+                "D": "发送简单GET请求"
+            },
+            "answer": "B",
+            "explanation": "Selenium是浏览器自动化工具，可以驱动主流浏览器，模拟人工浏览、点击、输入等行为，常用来处理JS动态渲染页面。"
+        },
+        {
+            "index": 10,
+            "type": "single",
+            "text": "网络爬虫又称为网页____，其抓取行为一般需遵守robots协议。",
+            "options": {
+                "A": "蜘蛛",
+                "B": "蚂蚁",
+                "C": "蜜蜂",
+                "D": "蜻蜓"
+            },
+            "answer": "A",
+            "explanation": "网络爬虫俗称网页蜘蛛、网络机器人，行业通用规范要求爬虫行为遵守网站robots.txt协议。"
+        },
+        {
+            "index": 11,
+            "type": "single",
+            "text": "JSON是一种被广泛应用的____数据交换格式。",
+            "options": {
+                "A": "二进制",
+                "B": "轻量级",
+                "C": "加密型",
+                "D": "编译型"
+            },
+            "answer": "B",
+            "explanation": "JSON是一种轻量级文本数据交换格式，具备跨语言、易阅读、传输高效的特点。"
+        },
+        {
+            "index": 12,
+            "type": "single",
+            "text": "以下均为Python网页解析库的组合是？",
+            "options": {
+                "A": "BeautifulSoup、lxml、re正则表达式",
+                "B": "requests、urllib、socket",
+                "C": "pandas、numpy、matplotlib",
+                "D": "pymysql、redis、mongodb"
+            },
+            "answer": "A",
+            "explanation": "BeautifulSoup、lxml、re正则表达式都可用于解析提取网页内容；requests、urllib是网络请求库，其余为数据分析、数据库类库。"
+        },
+        {
+            "index": 13,
+            "type": "single",
+            "text": "对代码片段<html><p><!-- NOTE --></p></html>使用bs4库解析后，soup.p.string 返回的数据类型为？",
+            "options": {
+                "A": "普通字符串",
+                "B": "Comment",
+                "C": "数字类型",
+                "D": "列表类型"
+            },
+            "answer": "B",
+            "explanation": "HTML注释内容经BeautifulSoup解析后，会被识别为Comment注释节点类型，并非普通字符串。"
+        },
+        {
+            "index": 14,
+            "type": "single",
+            "text": "XPath是哪个技术体系中的核心组成部分？",
+            "options": {
+                "A": "HTML",
+                "B": "W3C·XSLT",
+                "C": "CSS",
+                "D": "JavaScript"
+            },
+            "answer": "B",
+            "explanation": "XPath由W3C制定，是XSLT技术体系的核心组成部分，主要用于XML文档的节点查询与定位。"
+        },
+        {
+            "index": 15,
+            "type": "single",
+            "text": "Beautiful Soup 是一款基于Python开发的什么类型文档解析工具？",
+            "options": {
+                "A": "音视频",
+                "B": "HTML、XML",
+                "C": "数据库",
+                "D": "二进制"
+            },
+            "answer": "B",
+            "explanation": "Beautiful Soup是专门用来解析HTML、XML这类标记语言文档的工具，是爬虫开发中常用的解析库。"
+        },
+        {
+            "index": 16,
+            "type": "single",
+            "text": "安装BeautifulSoup4库的正确pip指令为？",
+            "options": {
+                "A": "pip install bs4",
+                "B": "pip install beautifulsoup",
+                "C": "pip install soup4",
+                "D": "pip install bs"
+            },
+            "answer": "A",
+            "explanation": "Python环境中，使用pip install bs4是安装BeautifulSoup4库的标准命令。"
+        },
+        {
+            "index": 17,
+            "type": "single",
+            "text": "Lxml库的一项重要特性是能够对不规范的HTML代码进行？",
+            "options": {
+                "A": "加密处理",
+                "B": "自动补全、修复",
+                "C": "压缩编码",
+                "D": "转义字符替换"
+            },
+            "answer": "B",
+            "explanation": "lxml库容错性很强，可以自动补全标签、修复嵌套混乱等不规范的HTML代码。"
+        },
+        {
+            "index": 18,
+            "type": "single",
+            "text": "XPath 可用于在 XML 文档中遍历指定的____和属性节点。",
+            "options": {
+                "A": "元素节点",
+                "B": "文件节点",
+                "C": "系统节点",
+                "D": "路由节点"
+            },
+            "answer": "A",
+            "explanation": "XPath主要用于遍历、选取XML/HTML中的元素节点与标签属性节点。"
+        },
+        {
+            "index": 19,
+            "type": "single",
+            "text": "JavaScript三大组成部分除ECMAScript外，另外两部分是？",
+            "options": {
+                "A": "DOM、BOM",
+                "B": "CSS、HTML",
+                "C": "Vue、React",
+                "D": "Ajax、JSON"
+            },
+            "answer": "A",
+            "explanation": "JavaScript由三部分组成：ECMAScript（语法规范）、DOM（文档对象模型）、BOM（浏览器对象模型）。"
+        },
+        {
+            "index": 20,
+            "type": "single",
+            "text": "使用requests库发送GET请求时，附加查询参数应使用哪个参数？",
+            "options": {
+                "A": "headers",
+                "B": "params",
+                "C": "data",
+                "D": "cookies"
+            },
+            "answer": "B",
+            "explanation": "GET请求的URL查询参数使用params传递；data多用于POST表单，headers用于设置请求头。"
+        },
+        {
+            "index": 21,
+            "type": "single",
+            "text": "在BeautifulSoup中，通过CSS类名定位元素的常用方法是？",
+            "options": {
+                "A": "find_all('div',class_=\"类名\")",
+                "B": "find_all(id=\"类名\")",
+                "C": "get_text()",
+                "D": "select_one(\"id\")"
+            },
+            "answer": "A",
+            "explanation": "BeautifulSoup中通过class_参数匹配CSS类名；id参数用于匹配标签id，get_text()用于提取标签文本。"
+        },
+        {
+            "index": 22,
+            "type": "single",
+            "text": "使用lxml的xpath()方法返回的结果类型是？",
+            "options": {
+                "A": "字典",
+                "B": "列表",
+                "C": "字符串",
+                "D": "整数"
+            },
+            "answer": "B",
+            "explanation": "无论XPath表达式匹配到多少内容，lxml的xpath()方法统一返回列表类型。"
+        },
+        {
+            "index": 23,
+            "type": "single",
+            "text": "BeautifulSoup中查找页面中第一个a标签的方法是？",
+            "options": {
+                "A": "soup.find(\"a\")",
+                "B": "soup.find_all(\"a\")",
+                "C": "soup.select(\"a\")",
+                "D": "soup.get(\"a\")"
+            },
+            "answer": "A",
+            "explanation": "find()方法只返回第一个匹配的标签；find_all()、select()会返回所有匹配标签组成的列表。"
+        },
+        {
+            "index": 24,
+            "type": "single",
+            "text": "Python中，使用pymysql连接MySQL数据库时，首先需要创建的对象是？",
+            "options": {
+                "A": "游标对象",
+                "B": "数据库连接对象",
+                "C": "结果集对象",
+                "D": "日志对象"
+            },
+            "answer": "B",
+            "explanation": "使用pymysql操作MySQL，第一步是创建数据库连接对象，再通过连接对象创建游标执行SQL语句。"
+        },
+        {
+            "index": 25,
+            "type": "single",
+            "text": "网络爬虫标准执行流程顺序为？",
+            "options": {
+                "A": "发送请求→获取响应→解析数据→存储数据",
+                "B": "解析数据→发送请求→存储数据→获取响应",
+                "C": "存储数据→发送请求→解析数据→获取响应",
+                "D": "获取响应→解析数据→发送请求→存储数据"
+            },
+            "answer": "A",
+            "explanation": "爬虫基础流程：发起网络请求 → 接收服务器响应 → 解析提取有效数据 → 数据落地存储。"
+        },
+        {
+            "index": 26,
+            "type": "single",
+            "text": "在Scrapy中，要启用一个Item Pipeline，需要在哪个文件中进行配置？",
+            "options": {
+                "A": "settings.py，ITEM_PIPELINES",
+                "B": "items.py，定义字段",
+                "C": "spider文件，编写爬取逻辑",
+                "D": "middlewares.py，配置中间件"
+            },
+            "answer": "A",
+            "explanation": "Item Pipeline（数据管道）需要在settings.py文件中配置ITEM_PIPELINES参数才能启用生效。"
+        },
+        {
+            "index": 27,
+            "type": "single",
+            "text": "Scrapy控制台命令 scrapy genspider mydomain example.com 的作用是？",
+            "options": {
+                "A": "运行名为mydomain的爬虫",
+                "B": "新建名为mydomain的爬虫文件，指定域为example.com",
+                "C": "创建新的项目工程",
+                "D": "查看爬虫运行日志"
+            },
+            "answer": "B",
+            "explanation": "scrapy genspider 命令用于创建爬虫文件，格式为 scrapy genspider 爬虫名 允许爬取域名。"
+        },
+        {
+            "index": 28,
+            "type": "single",
+            "text": "在爬虫开发中，OCR技术主要用于解决哪类反爬机制？",
+            "options": {
+                "A": "IP封禁",
+                "B": "验证码识别",
+                "C": "请求频率限制",
+                "D": "UA检测"
+            },
+            "answer": "B",
+            "explanation": "网站图形验证码是常见反爬手段，OCR光学字符识别技术可以识别图片中的验证码字符。"
+        },
+        {
+            "index": 29,
+            "type": "single",
+            "text": "常见的爬虫模拟登录实现方式包括？",
+            "options": {
+                "A": "携带Cookie登录、Selenium",
+                "B": "修改IP登录、修改UA登录",
+                "C": "代理登录、隧道登录",
+                "D": "解析HTML登录、解析JSON登录"
+            },
+            "answer": "A",
+            "explanation": "爬虫模拟登录常用两种方式：一是直接携带已登录的Cookie访问页面；二是使用Selenium模拟人工登录操作。"
+        },
+        {
+            "index": 30,
+            "type": "single",
+            "text": "爬取公开天气数据时，网站无robots.txt，正确做法是？",
+            "options": {
+                "A": "高频全速爬取、批量采集",
+                "B": "控制爬取频率、标注来源",
+                "C": "伪造大量IP并发爬取",
+                "D": "绕过所有限制暴力爬取"
+            },
+            "answer": "B",
+            "explanation": "无robots协议时也需遵守爬虫礼仪，控制请求频率减轻服务器压力，同时采集数据建议标注数据来源。"
+        },
+        {
+            "index": 31,
+            "type": "single",
+            "text": "XPath表达式 //div/p[1]/text() 的含义是？",
+            "options": {
+                "A": "获取所有div下第一个p标签内的文本内容",
+                "B": "获取第一个div下所有p标签的属性",
+                "C": "获取页面所有p标签的链接",
+                "D": "获取div标签的class属性"
+            },
+            "answer": "A",
+            "explanation": "//div 匹配页面全部div标签，p[1]代表当前div下第一个p标签，text()用于提取标签内部文本。"
+        },
+        {
+            "index": 32,
+            "type": "single",
+            "text": "Python中，读取文件所有内容时，常用文件对象的（）方法。",
+            "options": {
+                "A": "read()",
+                "B": "readline()",
+                "C": "readlines()",
+                "D": "load()"
+            },
+            "answer": "A",
+            "explanation": "read() 一次性读取文件全部内容；readline() 读取单行内容；readlines() 按行读取并返回列表；load() 不是Python文件内置读取方法。"
+        },
+        {
+            "index": 33,
+            "type": "essay",
+            "text": "请判断\"只要遵守robots协议，爬取数据的行为就一定合法\"是否正确，并说明原因",
+            "options": {},
+            "answer": "",
+            "explanation": "该说法**错误**。原因：1. robots协议只是网站给出的爬虫道德规范、建议性协议，不具备法律强制效力；2. 即便遵守robots协议，若爬取内容涉及用户隐私、版权数据、涉密信息、商业机密，或是违反《网络安全法》《著作权法》《个人信息保护法》等法律法规，行为依旧违法；3. 大规模恶意爬取占用服务器资源、扰乱网站正常运营，即使遵循robots协议，也可能构成侵权或违法。"
+        },
+        {
+            "index": 34,
+            "type": "essay",
+            "text": "请说明在采集公开网络数据时应遵循哪些基本伦理规范，并解释遵守这些规范的重要性",
+            "options": {},
+            "answer": "",
+            "explanation": "一、基本伦理规范：1. 遵守robots协议，不爬取协议禁止的目录与内容；2. 控制爬取频率，设置请求间隔，不高频并发访问；3. 尊重版权，商用数据需获得授权，不盗用原创内容；4. 规避隐私数据，不采集手机号、身份证、住址等个人信息；5. 伪装合理请求标识，不恶意攻击服务器。\n二、重要性：1. 降低爬虫被封禁、IP拉黑的概率，保证爬取稳定性；2. 维护网络秩序，避免给目标网站造成服务器压力；3. 规避法律风险，防止侵权、违法问题；4. 树立行业规则，保障爬虫技术良性发展。"
+        },
+        {
+            "index": 35,
+            "type": "essay",
+            "text": "请列举至少四种常见的反爬机制，并说明每种机制的应对策略",
+            "options": {},
+            "answer": "",
+            "explanation": "1. User-Agent检测：网站校验请求头UA，拦截爬虫。应对：伪造浏览器UA，随机切换UA池。\n2. 验证码反爬：图形、滑动、点选验证码。应对：简单验证码使用OCR识别，复杂验证码接入第三方打码平台，或使用Selenium模拟人工操作。\n3. IP封禁/频率限制：短时间高频请求直接封禁IP。应对：设置请求延时，使用代理IP池轮换IP。\n4. Cookie/会话检测：依赖登录态Cookie才能访问内容。应对：模拟登录获取有效Cookie，携带Cookie发起请求。\n5. JS动态渲染：页面数据由JavaScript异步加载，源码无内容。应对：使用Selenium、Playwright等无头浏览器渲染页面。"
+        },
+        {
+            "index": 36,
+            "type": "essay",
+            "text": "请用文字描述Scrapy框架的核心工作流程，并说明每个组件的主要功能",
+            "options": {},
+            "answer": "",
+            "explanation": "一、核心组件及功能：\n1. 引擎(Engine)：总调度中心，负责所有组件通信、任务流转。\n2. 爬虫(Spider)：开发者编写的爬取逻辑，定义起始URL、解析规则、提取数据。\n3. 调度器(Scheduler)：接收请求队列，去重、排序，依次分发请求。\n4. 下载器(Downloader)：接收请求，访问网站获取网页响应，是真正发起网络请求的组件。\n5. 数据管道(Item Pipeline)：接收解析后的数据，完成清洗、去重、存储（文件/数据库）。\n6. 中间件(Middleware)：分为下载器中间件、爬虫中间件，用于拦截请求/响应，实现UA伪装、代理、异常处理等。\n二、工作流程：引擎从Spider获取请求→交给调度器排队→调度器将请求分发至下载器→下载器获取响应后回传给引擎→引擎转发响应给Spider解析→Spider提取数据/新请求，数据交给管道存储，新请求再次进入调度器循环。"
+        },
+        {
+            "index": 37,
+            "type": "essay",
+            "text": "请说明Python中requests库发送GET和POST请求的常用方法，并说明如何携带请求参数和请求头信息",
+            "options": {},
+            "answer": "",
+            "explanation": "1. GET请求：使用 requests.get(url) 方法。参数携带：URL查询参数使用 params 传字典；请求头使用 headers 传字典。示例：requests.get(url, params={\"key\":\"value\"}, headers={\"User-Agent\":\"浏览器标识\"})\n2. POST请求：使用 requests.post(url) 方法。普通表单参数使用 data 传字典；JSON格式参数使用 json 传字典；请求头同样使用 headers 参数。示例：requests.post(url, data={\"账号\":\"xxx\"}, headers=headers)\n补充：可通过timeout设置超时时间，cookies参数携带登录凭证。"
+        },
+        {
+            "index": 38,
+            "type": "essay",
+            "text": "请分别说明正则表达式中\".\"、\"*\"和\"？\"的含义，并各写出1个贪婪匹配和非贪婪匹配的典型表达式",
+            "options": {},
+            "answer": "",
+            "explanation": "1. 符号含义：\n- . ：匹配除换行符以外的**任意单个字符**；\n- * ：匹配前面的字符/子表达式 **0次或多次**；\n- ? ：匹配前面的字符/子表达式 **0次或1次**，同时可将贪婪匹配转为非贪婪匹配。\n2. 贪婪匹配（默认模式，尽可能多匹配内容）：\n示例：<.*>  可匹配一整段首尾标签内容。\n3. 非贪婪匹配（加?，尽可能少匹配内容）：\n示例：<.*?>  逐个匹配单个标签内容。"
+        },
+        {
+            "index": 39,
+            "type": "essay",
+            "text": "请比较使用正则表达式和BeautifulSoup解析HTML的优缺点",
+            "options": {},
+            "answer": "",
+            "explanation": "一、正则表达式解析HTML：\n优点：1. 通用性强，文本类数据均可使用；2. 简单规则执行速度快；3. 无需依赖第三方解析库。\n缺点：1. HTML结构复杂时，正则表达式编写难度大、可读性差；2. 容错性低，网页标签微小改动就会匹配失效；3. 无法识别HTML层级结构。\n\n二、BeautifulSoup解析HTML：\n优点：1. 基于标签树解析，贴合HTML结构，定位元素简单直观；2. 容错性强，可兼容不规范HTML；3. 语法简洁，代码易维护。\n缺点：1. 仅适用于HTML/XML标记文档；2. 相比简单正则，执行速度略慢；3. 需要额外安装第三方库。"
+        },
+        {
+            "index": 40,
+            "type": "essay",
+            "text": "请列举至少四种从网页中提取图片URL的方法，并简要说明原理",
+            "options": {},
+            "answer": "",
+            "explanation": "1. BeautifulSoup解析：定位所有<img>标签，提取src属性值。原理：将HTML转为标签树，根据标签名和属性定位图片地址。\n2. XPath解析：使用XPath表达式 //img/@src 提取图片链接。原理：通过路径语法遍历节点，直接获取img标签的src属性。\n3. 正则表达式匹配：编写正则匹配 <img 标签中的src属性内容。原理：利用正则规则匹配文本中的图片链接字符串。\n4. CSS选择器：使用BeautifulSoup或parsel的CSS选择器语法选取img[src]。原理：沿用前端CSS选择器规则定位元素并提取属性。\n5. JSON解析：若图片地址存于接口JSON中，直接解析JSON字段获取URL。原理：解析接口返回的结构化JSON数据。"
+        },
+        {
+            "index": 41,
+            "type": "essay",
+            "text": "请列举五种以上常见的爬虫数据存储方式，并说明每种方式的核心适用场景",
+            "options": {},
+            "answer": "",
+            "explanation": "1. TXT文本文件：适用临时存储、简单文本数据，优点简单易用，适合测试场景。\n2. CSV文件：适用结构化表格数据（商品、榜单、榜单数据），可用Excel直接打开，轻量报表场景首选。\n3. JSON文件：适用嵌套结构数据、接口数据，跨语言兼容，适合传递、备份爬虫结构化数据。\n4. MySQL（关系型数据库）：适用海量结构化数据、需要复杂查询、事务管理的正式业务场景。\n5. MongoDB（非关系型数据库）：适用嵌套复杂、字段不固定的网页数据，灵活度高，适合爬虫异构数据。\n6. Redis：适用临时缓存、去重、队列任务，常用于爬虫请求去重、分布式爬虫任务调度。\n7. Excel文件：适用办公展示、小型统计数据，面向非技术人员查看数据。"
+        },
+        {
+            "index": 42,
+            "type": "essay",
+            "text": "请说明Python与关系型数据库交互的基本工作流程，并列举三种常用的Python数据库操作库",
+            "options": {},
+            "answer": "",
+            "explanation": "一、交互流程：1. 导入数据库操作库；2. 创建数据库连接对象（填写地址、账号、密码、库名）；3. 通过连接创建游标对象；4. 使用游标执行SQL语句（增删改查）；5. 获取执行结果/提交事务；6. 关闭游标、关闭数据库连接。\n二、常用数据库库：1. pymysql（操作MySQL）；2. cx_Oracle（操作Oracle）；3. psycopg2（操作PostgreSQL）；4. sqlite3（Python内置，操作SQLite）。"
+        },
+        {
+            "index": 43,
+            "type": "essay",
+            "text": "请列举至少八种掌握爬虫技能后可从事的职业方向，并说明每个岗位的核心工作内容",
+            "options": {},
+            "answer": "",
+            "explanation": "1. 网络爬虫工程师：开发、维护爬虫程序，采集全网公开数据，处理反爬、分布式爬虫。\n2. 数据采集工程师：定制采集规则，对接业务需求，清洗、整理原始采集数据。\n3. 大数据开发工程师：利用爬虫获取数据源，结合大数据框架做数据处理、分析。\n4. 数据分析工程师：采集行业数据，做竞品分析、市场趋势分析、数据可视化。\n5. 后端开发工程师：后端接口开发、数据接口对接，爬虫作为后端数据模块。\n6. 舆情分析师：爬取社交平台、新闻网站内容，监控网络舆情、热点事件。\n7. 竞品运营分析师：爬取竞品商品、价格、活动数据，为运营策略提供依据。\n8. 自动化测试工程师：使用Selenium等爬虫工具做Web页面自动化测试。\n9. AI数据标注工程师：爬取网络图片、文本，为人工智能模型制作训练数据集。\n10. 运维工程师：编写爬虫/脚本监控网站、接口运行状态。"
+        },
+        {
+            "index": 44,
+            "type": "essay",
+            "text": "请列举至少五种爬虫技术在金融行业的应用场景，并说明每个场景的核心价值",
+            "options": {},
+            "answer": "",
+            "explanation": "1. 股市行情采集：爬取证券网站股价、成交量、公告数据。价值：实时监控行情，量化交易、行情分析。\n2. 理财产品监控：爬取银行、理财平台产品利率、期限、销量。价值：产品对比、竞品分析、用户推荐。\n3. 财经新闻舆情：爬取财经媒体、论坛新闻与评论。价值：预判市场风向、风险预警、舆情监控。\n4. 征信与企业信息采集：爬取工商、司法、企业公示信息。价值：风控审核、企业资质评估、信贷风控。\n5. 外汇/贵金属行情：爬取全球汇率、黄金白银价格。价值：实时报价、交易参考、跨境金融业务。\n6. 保险产品分析：爬取各大保险公司险种、保费、条款。价值：产品调研、定价分析、业务优化。"
+        },
+        {
+            "index": 45,
+            "type": "essay",
+            "text": "HTML解析与数据提取（基础）：请使用BeautifulSoup库解析指定HTML文本，提取所有图片标签<img>的src属性值和alt属性值。HTML内容：<div class=\"gallery\">\n  <img src=\"images/photo1.jpg\" alt=\"风景照片\">\n  <img src=\"images/photo2.jpg\" alt=\"人物照片\">\n  <img src=\"images/photo3.jpg\" alt=\"建筑照片\">\n</div>\n要求：输出格式为 \"图片描述: 图片路径\"，例如 \"风景照片: images/photo1.jpg\"",
+            "options": {},
+            "answer": "",
+            "explanation": "参考代码：\nfrom bs4 import BeautifulSoup\nhtml = '''<div class=\"gallery\">\n  <img src=\"images/photo1.jpg\" alt=\"风景照片\">\n  <img src=\"images/photo2.jpg\" alt=\"人物照片\">\n  <img src=\"images/photo3.jpg\" alt=\"建筑照片\">\n</div>'''\nsoup = BeautifulSoup(html, \"lxml\")\nimg_list = soup.find_all(\"img\")\nfor img in img_list:\n    alt = img.get(\"alt\")\n    src = img.get(\"src\")\n    print(f\"{alt}: {src}\")\n运行结果：\n风景照片: images/photo1.jpg\n人物照片: images/photo2.jpg\n建筑照片: images/photo3.jpg"
+        },
+        {
+            "index": 46,
+            "type": "essay",
+            "text": "网页基础爬取（requests库）：使用requests库编写爬虫，爬取豆瓣电影Top250页面HTML内容。要求：(1)目标网址：https://movie.douban.com/top250 (2)设置请求头模拟Firefox浏览器 (3)超时时间15秒 (4)处理响应编码 (5)状态码为200则输出前500个字符",
+            "options": {},
+            "answer": "",
+            "explanation": "参考代码：\nimport requests\nurl = \"https://movie.douban.com/top250\"\nheaders = {\n    \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0\"\n}\ntry:\n    res = requests.get(url, headers=headers, timeout=15)\n    res.encoding = \"utf-8\"  # 处理编码\n    if res.status_code == 200:\n        print(res.text[:500])\nexcept Exception as e:\n    print(\"请求异常：\", e)"
+        },
+        {
+            "index": 47,
+            "type": "essay",
+            "text": "特定元素提取（BeautifulSoup）：根据给定HTML结构，提取所有商品名称和价格，并计算平均价格。HTML结构：<div class=\"product-list\">\n  <div class=\"item\">\n    <span class=\"name\">iPhone 14</span>\n    <span class=\"price\">5999</span>\n  </div>\n  <div class=\"item\">\n    <span class=\"name\">iPhone 15</span>\n    <span class=\"price\">6999</span>\n  </div>\n</div>",
+            "options": {},
+            "answer": "",
+            "explanation": "参考代码：\nfrom bs4 import BeautifulSoup\nhtml = '''<div class=\"product-list\">\n  <div class=\"item\">\n    <span class=\"name\">iPhone 14</span>\n    <span class=\"price\">5999</span>\n  </div>\n  <div class=\"item\">\n    <span class=\"name\">iPhone 15</span>\n    <span class=\"price\">6999</span>\n  </div>\n</div>'''\nsoup = BeautifulSoup(html, \"lxml\")\nitem_list = soup.find_all(\"div\", class_=\"item\")\nprice_total = 0\ncount = 0\nfor item in item_list:\n    name = item.find(\"span\", class_=\"name\").get_text(strip=True)\n    price = int(item.find(\"span\", class_=\"price\").get_text(strip=True))\n    print(f\"商品：{name}，价格：{price}\")\n    price_total += price\n    count += 1\nif count > 0:\n    avg_price = price_total / count\n    print(f\"平均价格：{avg_price}\")"
+        },
+        {
+            "index": 48,
+            "type": "essay",
+            "text": "实际网站爬取（综合应用）：爬取高校官网新闻列表页面，提取新闻标题和发布时间。要求：(1)目标网址：https://www.example-university.edu.cn/news (2)标题在<a class=\"news-title\">标签内 (3)发布时间在<span class=\"news-date\">标签内 (4)设置请求头与超时 (5)数据保存为 {\"title\": 标题, \"date\": 日期} 格式列表",
+            "options": {},
+            "answer": "",
+            "explanation": "参考代码：\nimport requests\nfrom bs4 import BeautifulSoup\nurl = \"https://www.example-university.edu.cn/news\"\nheaders = {\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\"}\nnews_data = []\ntry:\n    res = requests.get(url, headers=headers, timeout=15)\n    res.encoding = \"utf-8\"\n    soup = BeautifulSoup(res.text, \"lxml\")\n    title_tags = soup.find_all(\"a\", class_=\"news-title\")\n    date_tags = soup.find_all(\"span\", class_=\"news-date\")\n    for t, d in zip(title_tags, date_tags):\n        title = t.get_text(strip=True)\n        news_data.append({\"title\": title, \"date\": d.get_text(strip=True)})\n    print(news_data)\nexcept Exception as e:\n    print(\"爬取异常：\", e)"
+        },
+        {
+            "index": 49,
+            "type": "essay",
+            "text": "Scrapy下载器中间件：编写Scrapy下载器中间件，功能：(1)为每个请求随机选择User-Agent (2)UA列表包含Chrome、Firefox、Safari、Edge、Opera五种浏览器 (3)在process_request方法中设置请求头",
+            "options": {},
+            "answer": "",
+            "explanation": "参考代码（middlewares.py）：\nimport random\nclass RandomUserAgentMiddleware:\n    # 定义多浏览器UA池\n    USER_AGENTS = [\n        \"Mozilla/5.0 (Windows NT 10.0) Chrome/118.0.0.0 Safari/537.36\", # Chrome\n        \"Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/118.0\", # Firefox\n        \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15\", # Safari\n        \"Mozilla/5.0 (Windows NT 10.0) Edge/118.1883.76\", # Edge\n        \"Mozilla/5.0 (Windows NT 10.0) Opera/104.0.4944.80\" # Opera\n    ]\n    def process_request(self, request, spider):\n        # 随机选取UA并设置请求头\n        ua = random.choice(self.USER_AGENTS)\n        request.headers[\"User-Agent\"] = ua\n\n# 配置启用：在settings.py中开启中间件\n# DOWNLOADER_MIDDLEWARES = {\n#    \"项目名.middlewares.RandomUserAgentMiddleware\": 543,\n# }"
+        },
+        {
+            "index": 50,
+            "type": "essay",
+            "text": "Scrapy爬虫与翻页处理：编写名为BookSpider的Scrapy爬虫，爬取图书网站书目。要求：(1)起始URL：http://books.example.com/list (2)书籍信息在<div class=\"book-item\">内 (3)书名在<h3 class=\"title\">内 (4)作者在<span class=\"author\">内 (5)字典形式yield数据（book_name、author） (6)处理翻页，下一页链接为<a class=\"next\">的href属性",
+            "options": {},
+            "answer": "",
+            "explanation": "参考爬虫代码（spiders/book_spider.py）：\nimport scrapy\nclass BookSpider(scrapy.Spider):\n    name = \"BookSpider\"\n    start_urls = [\"http://books.example.com/list\"]\n    def parse(self, response):\n        # 提取书籍信息\n        book_items = response.css(\"div.book-item\")\n        for item in book_items:\n            book_name = item.css(\"h3.title::text\").get(strip=True)\n            author = item.css(\"span.author::text\").get(strip=True)\n            yield {\n                \"book_name\": book_name,\n                \"author\": author\n            }\n        # 处理翻页\n        next_url = response.css(\"a.next::attr(href)\").get()\n        if next_url:\n            yield scrapy.Request(url=next_url, callback=self.parse)"
+        }
+    ],
+    "created_at": "2026-06-11 15:00:00"
+}
